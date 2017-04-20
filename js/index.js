@@ -43,24 +43,24 @@ function sendToArduino(data) {
 }
 
 function drive() {
-    sendToArduino('f');
+    sendToArduino("f");
     forwardButton.innerHTML="fw";
 }
 
 
 function reverse() {
-    sendToArduino('b');
+    sendToArduino("b");
 }
 
 function turnRight() {
-    sendToArduino('r');
+    sendToArduino("r");
 }
 
 function turnLeft(){
-    sendToArduino('l');
+    sendToArduino("l");
 }
 
 function stop(){
-    sendToArduino('s');
+    sendToArduino("s");
     forwardButton.innerHTML="f";
 }
