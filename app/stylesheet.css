@@ -1,0 +1,90 @@
+{
+margin: 0;
+padding: 0;
+}
+
+html,body {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+/*
+body {
+    padding: 0px;
+    margin: 0px; 
+    height: 100%;
+    width: 100%;
+}
+*/
+
+.button {
+    color: grey;
+    
+}
+
+#controllerDiv {
+    position: auto;
+    z-index: 1;
+    float: right;
+    width: 50%;
+    height: 332px;
+    
+    font-size: 64px;
+}
+
+#forwardButton {
+    text-align: center;
+    
+}
+
+#leftButton {
+    text-align: left;
+    width: 50%;
+   display: inline-block;
+    position: relative;
+}
+
+#rightButton {
+    text-align: right;
+    width: 50%;
+    float: right;
+}
+
+#backwardButton {
+    text-align: center;
+    float: none;
+    
+    
+}
+
+#controlSpeedDiv {
+    width: 50%;
+    
+}
+
+#NavBar {
+    z-index: 9000;
+    background-color: #3b3be6;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    
+}
+
+.title {
+    height: 56px;
+    margin: 0px;
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    color: #000060;
+    text-align: center;
+    
+    
+}
+
+
+
+
+
+
