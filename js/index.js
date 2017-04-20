@@ -1,4 +1,4 @@
-var macAdress = "00:06:66:7D:83:DF";
+var macAddress = "00:06:66:7D:83:DF"; //BLuetooth Mate mac adress, pasword 1234
 var forwardButton, backwardButton, leftButton, rightButton;
 
 
@@ -9,7 +9,7 @@ function onLoad() {
     leftButton = document.getElementById("leftButton");
     rightButton = document.getElementById("rightButton");
     
-    document.addEventListener("deviceready",onDeviceReady,false);
+    document.addEventListener("deviceready", onDeviceReady, false);
     
     /*These eventlisteners are triggered on touchstart*/
     forwardButton.addEventListener("touchstart",drive,false);
@@ -27,12 +27,11 @@ function onLoad() {
 }
 
 function onDeviceReady(){
-    alert("hej");
-     bluetoothSerial.connect(macAddress, onConnect, onDisconnect);
+    bluetoothSerial.connect(macAddress, onConnect, onDisconnect);
 }
 
 function onConnect() {
-    alert("Successfully connected to: " + macAdress + "!");
+    alert("Successfully connected to: " + macAddress + "!");
 }
 
 function onDisconnect() {
@@ -44,7 +43,7 @@ function sendToArduino(data) {
 }
 
 function drive() {
-    //sendToArduino('f');
+    sendToArduino('f');
     forwardButton.innerHTML="fw";
 }
 
@@ -62,6 +61,6 @@ function turnLeft(){
 }
 
 function stop(){
-    //sendToArduino('s');
+    sendToArduino('s');
     forwardButton.innerHTML="f";
 }
