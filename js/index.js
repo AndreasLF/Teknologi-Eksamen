@@ -43,7 +43,7 @@ function sendToArduino(data) {
 }
 
 function drive() {
-    sendToArduino("f");
+    sendToArduino('f');
     forwardButton.innerHTML="fw";
 }
 
