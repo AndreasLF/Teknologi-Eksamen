@@ -44,6 +44,7 @@ function sendToArduino(data) {
 
 function drive() {
     sendToArduino('f');
+    forwardButton.innerHTML="f";
 }
 
 
@@ -61,4 +62,5 @@ function turnLeft(){
 
 function stop(){
     sendToArduino('s');
+    forwardButton.innerHTML="f";
 }
