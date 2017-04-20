@@ -27,6 +27,7 @@ function onLoad() {
 }
 
 function onDeviceReady(){
+    alert("hej");
      bluetoothSerial.connect(macAddress, onConnect, onDisconnect);
 }
 
@@ -43,8 +44,8 @@ function sendToArduino(data) {
 }
 
 function drive() {
-    sendToArduino('f');
-    forwardButton.innerHTML="f";
+    //sendToArduino('f');
+    forwardButton.innerHTML="fw";
 }
 
 
@@ -61,6 +62,6 @@ function turnLeft(){
 }
 
 function stop(){
-    sendToArduino('s');
+    //sendToArduino('s');
     forwardButton.innerHTML="f";
 }
