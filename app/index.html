@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-
-
-
 <html>
-
-
 
 <head>
 
@@ -16,27 +11,21 @@
 
     <script type="text/javascript" src="cordova.js"></script>
 
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 </head>
 
-
-
 <body onload="onLoad()">
 
     <div id="NavBar">
-    <p class="title">BlueTooth Controller</p>
+        <p class="title">Bluetooth Controller</p>
     </div>
 
-
     <div id="content">
-
-
 
         <div id="controllerDiv">
 
@@ -45,33 +34,25 @@
             <div id="leftButton" class="button"><i class="material-icons" style="font-size:96px;">keyboard_arrow_left</i></div>
 
             <div id="rightButton" class="button"><i class="material-icons" style="font-size:96px;">keyboard_arrow_right</i></div>
-            
+
             <div id="backwardButton" class="button"><i class="material-icons" style="font-size:96px;">keyboard_arrow_down</i></div>
 
         </div>
 
-
+        <!-- Three Speed Controls -->
 
         <div id="controlSpeedDiv">
 
-            <div id="increaseSpeed" class="button"></div>
+            <div id="speed1" class="button1">1</div>
 
-            <div id="decreasSpeed" class="button"></div>
+            <div id="speed2" class="button1">2</div>
+
+            <div id="speed3" class="button1">3</div>
 
         </div>
 
     </div>
 
-
-
-
-
-
-
 </body>
-
-
-
-
 
 </html>
