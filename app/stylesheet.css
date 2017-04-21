@@ -20,6 +20,13 @@ body {
 .button {
     color: grey;
     transition: 0.5s;
+    /*Makes sure the user cannot select text on the screen to avoid selection when holding down buttons*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #controllerDiv {
@@ -93,6 +100,13 @@ body {
     text-align: center;
     padding-top: 136px;
     transition: 0.5s;
+    /*Makes sure the user cannot select text on the screen to avoid selection when holding down buttons*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #speed1 {
